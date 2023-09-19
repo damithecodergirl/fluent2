@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'latest';
+    src: url(./fonts/latest.woff) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'latest', sans-serif;
+}
+
+:root{
+    --astro-code-color-text: #000000;
+    --astro-code-color-background: #ffffff;
+    --astro-code-token-constant: #896e39;
+    --astro-code-token-keyword: #527588;
+    --astro-code-token-function: #527588;
+    --astro-code-token-string-expression: #8069bc;
+    --astro-code-token-punctuation: #000000;
+}
