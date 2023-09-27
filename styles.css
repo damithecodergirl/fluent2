@@ -394,20 +394,40 @@
 @font-face {
     font-family: 'Cascadia';
     src: local('Cascadia') url('./fonts/Cascadia.woff') format('woff');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Segeo UI';
-    src: local('Segeo UI Bold') url('./fonts/Segoe\ UI\ Bold.woff') format('woff');
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'Segeo UI';
-    src: local('Segeo UI') url('./fonts/Segoe\ UI.woff') format('woff');
-    font-weight: 600;
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segeo UI';
+    src: local('Segeo UI') url('./fonts/SegoeUI.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segeo UI';
+    src: local('Segeo UI Semi Bold') url('./fonts/SegoeUI-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segeo UI';
+    src: local('Segeo UI Bold') url('./fonts/SegoeUI-Bold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segeo UI';
+    src: local('Segeo UI Light') url('./fonts/SegoeUI-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 *{
@@ -415,4 +435,38 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segeo UI', sans-serif;
+    background: var(--colorNeutralBackground1);
+    color: var(--colorStrokeFocus2);
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header.header{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav.nav{
+    display: flex;
+    flex: 1 0 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 23px;
+    column-gap: 10px;
+}
+
+nav .nav-btn2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav .logo-text{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
