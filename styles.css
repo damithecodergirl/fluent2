@@ -393,35 +393,35 @@
 
 @font-face {
     font-family: 'Cascadia';
-    src: local('Cascadia') url('./fonts/Cascadia.woff') format('woff');
-    font-weight: 400;
+    src: url('./fonts/Cascadia.woff') format('woff') local('Cascadia');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segeo UI';
-    src: local('Segeo UI') url('./fonts/SegoeUI.woff') format('woff');
-    font-weight: 400;
+    src: url('./fonts/SegoeUI.woff') format('woff') local('Segeo UI');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segeo UI';
-    src: local('Segeo UI Semi Bold') url('./fonts/SegoeUI-SemiBold.woff') format('woff');
+    src: url('./fonts/SegoeUI-SemiBold.woff') format('woff') ('Segeo UI Semi Bold');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segeo UI';
-    src: local('Segeo UI Bold') url('./fonts/SegoeUI-Bold.woff') format('woff');
+    src: url('./fonts/SegoeUI-Bold.woff') format('woff') local('Segeo UI Bold') ;
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segeo UI';
-    src: local('Segeo UI Light') url('./fonts/SegoeUI-Light.woff') format('woff');
+    src: url('./fonts/SegoeUI-Light.woff') format('woff') local('Segeo UI Light');
     font-weight: 200;
     font-style: normal;
 }
@@ -434,7 +434,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segeo UI', sans-serif;
+    font-family: 'Segeo UI';
     background: var(--colorNeutralBackground1);
     color: var(--colorStrokeFocus2);
     list-style: none;
@@ -469,4 +469,10 @@ nav .nav-btn2{
 nav .logo-text{
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+nav .logo{
+    font-size: 2rem;
+    font-family: 'Cascadia';
+    font-weight: 400;
 }
